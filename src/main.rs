@@ -1,4 +1,4 @@
-use teloxide::{prelude::*, utils::command::BotCommand};
+use teloxide::{prelude::*, utils::command::BotCommand, types::ParseMode::Markdown};
 use std::error::Error;
 use urlshortener::{client::UrlShortener, providers::Provider};
 mod scrape;
@@ -15,7 +15,7 @@ enum Command {
     #[command(description = "Gets the source code link.")]
     Code,
     #[command(description = "Print random jokes.")]
-    J,
+    Jk,
     #[command(description = "Shorten a given url.")]
     Short(String),
 }
@@ -27,10 +27,19 @@ async fn answer(
     match command {
 Command::Start =>{
     
-        cx.answer(format!("This is a bot made in rust by @I_am_Osiris9999. Type /help to see what this bot can do.")).await?
+        cx.reply_to(format!("A bot made in rust by Osiris. Type /help to see what this bot can do.")).parse_mode(Markdown).await?
         }
 
-Command::Help =>cx.answer(Command::descriptions()).await?,
+Command::Help => {
+cx.reply_to(format!("I am a bot made by [Osiris](https://t.me/I_am_Osiris9999) in [rust](https://www.rust-lang.org/).
+Here's a list of my commands:-
+`/help` ~ _Display this text._
+`/start` ~ _Shows bot info._ 
+`/cuss` ~ _Cuss at you with no mercy._
+`/code` ~ _Gets the source code of bot._
+`/jk` ~ _Print random jokes._
+`/short [url]` ~ _Shorten a given url._")).disable_web_page_preview(true).parse_mode(Markdown).await?
+        }
 
 Command::Cuss => {
         cx.answer(format!("Phak you bruh")).await?
@@ -39,8 +48,9 @@ Command::Cuss => {
 Command::Code => {
         cx.answer(format!("https://github.com/Osiris9999/Osiris-bot")).await?
         }
-Command::J => {let j =  scrape::juke().await;
-               cx.reply_to(format!("{:#?}", j)).await?
+Command::Jk => {
+        let j =  scrape::juke().await;
+        cx.reply_to(j.unwrap()).await?
         }
 Command::Short(link) => {
                 let us = UrlShortener::new().unwrap();
