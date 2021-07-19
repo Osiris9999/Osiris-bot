@@ -9,3 +9,6 @@ A simple telegram bot written in rust
 /J       -  Prints random jokes
 /Short   -  Shorten a given url
 ```
+## Credits
+
+A lot of thanks to [cyberknight777 ](https://github.com/cyberknight777) for helping me build this bot.
