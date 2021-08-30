@@ -10,8 +10,6 @@ enum Command {
     Start,
     #[command(description = "display this text.")]
     Help,
-    #[command(description = "cuss you with no mercy.")]
-    Cuss,
     #[command(description = "Gets the source code link.")]
     Code,
     #[command(description = "Print random jokes.")]
@@ -35,14 +33,9 @@ cx.reply_to(format!("I am a bot made by [Osiris](https://t.me/I_am_Osiris9999) i
 Here's a list of my commands:-
 `/help` ~ _Display this text._
 `/start` ~ _Shows bot info._ 
-`/cuss` ~ _Cuss at you with no mercy._
 `/code` ~ _Gets the source code of bot._
 `/jk` ~ _Print random jokes._
 `/short [url]` ~ _Shorten a given url._")).disable_web_page_preview(true).parse_mode(Markdown).await?
-        }
-
-Command::Cuss => {
-        cx.answer(format!("Phak you bruh")).await?
         }
 
 Command::Code => {
