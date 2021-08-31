@@ -16,7 +16,6 @@ Initialise the `TELOXIDE_TOKEN` environmental variable to your token:
 ```
 /Start   -  Shows details about the bot
 /Help    -  Display help message
-/Cuss    -  Cuss you with no mercy
 /Code    -  Gets the source code link
 /Jk       -  Prints random jokes
 /Short   -  Shorten a given url
