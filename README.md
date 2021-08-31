@@ -1,6 +1,18 @@
 # Osiris-bot
-A simple telegram bot written in rust
+`Osiris-bot` is a  simple telegram bot written in rust
 
+# Installation
+Create a bot using [Botfather](https://t.me/BotFather)
+
+Initialise the `TELOXIDE_TOKEN` environmental variable to your token:
+
+
+    $ export TELOXIDE_TOKEN=<Your token here>
+    git clone https://github.com/Osiris9999/Osiris-bot.git
+    cd Osiris-bot
+    cargo run --release
+    
+# Commands
 ```
 /Start   -  Shows details about the bot
 /Help    -  Display help message
