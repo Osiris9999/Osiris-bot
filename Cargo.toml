@@ -3,7 +3,13 @@ name = "bot"
 version = "0.1.0"
 authors = ["Osiris9999 <rishikeshmahi@gmail.com>"]
 edition = "2018"
-
+description = "A personal bot made by Osiris"
+documentation = ""
+readme = "README.md"
+homepage = "https://github.com/Osiris9999/Osiris-bot"
+repository = "https://github.com/Osiris9999/Osiris-bot"
+license = "MIT"
+keywords = ["telegram", "bot"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
