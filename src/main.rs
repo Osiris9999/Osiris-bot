@@ -65,7 +65,7 @@ async fn run() {
     teloxide::enable_logging!();
     log::info!("Starting Osiris Bot...");
 
-     let bot = Bot::new("1770418100:AAF8-f8v5C-dJ7DR9Yxb8Itlvfl_zzg-YJU").auto_send();
+     let bot = Bot::from_env().auto_send();
 
 
     let bot_name: String = "Osiris9999_BOT".to_string();
