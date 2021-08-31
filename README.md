@@ -1,4 +1,7 @@
 # Osiris-bot
+![badge](https://img.shields.io/badge/license-MIT-green)
+![2-badge](https://img.shields.io/badge/crates.io-v0.1.0-orange)
+
 `Osiris-bot` is a  simple telegram bot written in rust
 
 # Installation
@@ -22,6 +25,8 @@ Initialise the `TELOXIDE_TOKEN` environmental variable to your token:
 ```
 
 You can find the bot at  [@Osiris9999_BOT](https://t.me/Osiris9999_BOT)
+
+Support for this bot - [@bots.rs](https://t.me/bots_rs)
 ## Credits
 
 A lot of thanks to [cyberknight777 ](https://github.com/cyberknight777) for helping me build this bot.
