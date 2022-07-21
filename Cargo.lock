@@ -14,7 +14,7 @@ dependencies = [
  "scraper",
  "select",
  "teloxide",
- "tokio 1.10.1",
+ "tokio 1.13.1",
  "urlshortener",
 ]
 
@@ -535,7 +535,7 @@ dependencies = [
  "http",
  "indexmap",
  "slab",
- "tokio 1.10.1",
+ "tokio 1.13.1",
  "tokio-util 0.6.7",
  "tracing",
 ]
@@ -670,7 +670,7 @@ dependencies = [
  "itoa",
  "pin-project-lite 0.2.7",
  "socket2 0.4.1",
- "tokio 1.10.1",
+ "tokio 1.13.1",
  "tower-service",
  "tracing",
  "want",
@@ -698,7 +698,7 @@ dependencies = [
  "bytes 1.1.0",
  "hyper 0.14.12",
  "native-tls",
- "tokio 1.10.1",
+ "tokio 1.13.1",
  "tokio-native-tls",
 ]
 
@@ -1444,7 +1444,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_urlencoded",
- "tokio 1.10.1",
+ "tokio 1.13.1",
  "tokio-native-tls",
  "url",
  "wasm-bindgen",
@@ -1760,7 +1760,7 @@ dependencies = [
  "teloxide-core",
  "teloxide-macros",
  "thiserror",
- "tokio 1.10.1",
+ "tokio 1.13.1",
  "tokio-stream",
  "tokio-util 0.6.7",
 ]
@@ -1784,7 +1784,7 @@ dependencies = [
  "serde_json",
  "serde_with_macros",
  "thiserror",
- "tokio 1.10.1",
+ "tokio 1.13.1",
  "tokio-util 0.6.7",
  "uuid",
 ]
@@ -1905,9 +1905,9 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "1.10.1"
+version = "1.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "92036be488bb6594459f2e03b60e42df6f937fe6ca5c5ffdcb539c6b84dc40f5"
+checksum = "52963f91310c08d91cb7bff5786dfc8b79642ab839e188187e92105dbfb9d2c8"
 dependencies = [
  "autocfg",
  "bytes 1.1.0",
@@ -1941,7 +1941,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f7d995660bd2b7f8c1568414c1126076c13fbb725c40112dc0120b78eb9b717b"
 dependencies = [
  "native-tls",
- "tokio 1.10.1",
+ "tokio 1.13.1",
 ]
 
 [[package]]
@@ -1952,7 +1952,7 @@ checksum = "7b2f3f698253f03119ac0102beaa64f67a67e08074d03a22d18784104543727f"
 dependencies = [
  "futures-core",
  "pin-project-lite 0.2.7",
- "tokio 1.10.1",
+ "tokio 1.13.1",
 ]
 
 [[package]]
@@ -1990,7 +1990,7 @@ dependencies = [
  "futures-sink",
  "log",
  "pin-project-lite 0.2.7",
- "tokio 1.10.1",
+ "tokio 1.13.1",
 ]
 
 [[package]]
