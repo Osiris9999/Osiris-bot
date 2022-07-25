@@ -1,6 +1,6 @@
 [package]
 name = "Osirisbot"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Osiris9999 <rishikeshmahi@gmail.com>"]
 edition = "2018"
 description = "A personal bot made by Osiris"
@@ -11,13 +11,13 @@ keywords = ["telegram", "bot"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-teloxide = { version = "0.4", features = ["auto-send", "macros"] }
-log = "0.4.8"
+teloxide = { version = "0.10", features = ["auto-send", "macros"] }
+log = "0.4.17"
 pretty_env_logger = "0.4.0"
-rand = "0.8.3"
-scraper = "0.12.0"
-reqwest = "0.11.3"
+rand = "0.8.5"
+scraper = "0.13.0"
+reqwest = "0.11.11"
 select = "0.5.0"
 error-chain = "0.12.4"
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1.20.0", features = ["full"] }
 urlshortener = "3.0.0"
